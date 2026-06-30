@@ -3,58 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nathy Varelli - Conteudo Exclusivo 🔞</title>
-<meta name="description" content="Conteudo exclusivo +18 da Nathy Varelli. Packs de fotos, videos e grupo VIP no Telegram. Entre e vem se divertir!">
+<title>Nathy Varelli — Conteudo Exclusivo +18</title>
+<meta name="description" content="Conteudo exclusivo +18 da Nathy Varelli. Packs sensuais, videos intimos e grupo VIP. Acesso via Pix com entrega automatica.">
+<meta name="theme-color" content="#07070d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;9..40,500;9..40,700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0a0a0f;
-  --bg2:#111118;
-  --bg3:#1a1a26;
-  --accent:#ff2d55;
-  --accent2:#ff6b6b;
-  --gold:#d4a853;
-  --gold-dim:#a8883a;
-  --text:#f0e6e6;
-  --text-dim:#887777;
-  --card-bg:rgba(255,255,255,0.04);
-  --radius:16px;
-  --font-display:'Playfair Display',serif;
-  --font-body:'Inter',sans-serif;
+  --bg:#07070d;
+  --bg2:#0b0b16;
+  --bg3:#111122;
+  --surface:rgba(255,255,255,0.035);
+  --surface-hover:rgba(255,255,255,0.07);
+  --accent:#e84365;
+  --accent-dim:rgba(232,67,101,0.15);
+  --gold:#c9a96e;
+  --gold-dim:rgba(201,169,110,0.2);
+  --text:#ede0e0;
+  --text-dim:#776677;
+  --text-muted:#554455;
+  --radius:12px;
+  --radius-lg:20px;
+  --font-display:'Cinzel',serif;
+  --font-body:'DM Sans',sans-serif;
 }
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{
   font-family:var(--font-body);
   background:var(--bg);
   color:var(--text);
-  line-height:1.6;
+  line-height:1.65;
   overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
 }
 a{color:var(--accent);text-decoration:none;transition:color .3s}
-a:hover{color:var(--accent2)}
+a:hover{color:var(--gold)}
 img{max-width:100%;display:block}
 ::selection{background:var(--accent);color:#fff}
+::placeholder{color:var(--text-muted)}
 
 /* Header */
 .header{
   position:fixed;top:0;left:0;right:0;z-index:100;
-  padding:16px 24px;
+  padding:14px 32px;
   display:flex;align-items:center;justify-content:space-between;
-  background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);
-  border-bottom:1px solid rgba(255,255,255,0.05);
+  background:rgba(7,7,13,0.88);backdrop-filter:blur(24px);
+  border-bottom:1px solid rgba(255,255,255,0.04);
 }
 .header-logo{
-  font-family:var(--font-display);
-  font-size:20px;font-weight:700;
+  font-family:var(--font-display);font-size:18px;font-weight:700;
+  letter-spacing:3px;text-transform:uppercase;
   background:linear-gradient(135deg,var(--accent),var(--gold));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
-.header-links{display:flex;gap:8px;align-items:center}
+.header-links{display:flex;gap:6px;align-items:center}
 .header-links a{
-  padding:8px 16px;border-radius:100px;font-size:13px;font-weight:600;
-  background:var(--card-bg);border:1px solid rgba(255,255,255,0.08);
+  padding:8px 18px;border-radius:100px;font-size:12px;font-weight:600;
+  letter-spacing:0.5px;text-transform:uppercase;
+  background:var(--surface);border:1px solid rgba(255,255,255,0.06);
   color:var(--text);transition:all .3s;
 }
 .header-links a:hover{
@@ -65,284 +72,477 @@ img{max-width:100%;display:block}
 /* Hero */
 .hero{
   min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
-  text-align:center;padding:100px 24px 60px;position:relative;
-  background:radial-gradient(ellipse at 50% 0%,#1a0a14,transparent 60%),radial-gradient(ellipse at 80% 100%,#0a0a20,transparent 50%);
+  text-align:center;padding:120px 24px 60px;position:relative;overflow:hidden;
 }
 .hero::before{
   content:'';position:absolute;inset:0;
-  background:url('images/pack-light.gif') center/cover no-repeat;opacity:0.12;
-  filter:saturate(0.5);z-index:0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%,rgba(232,67,101,0.08),transparent),
+    radial-gradient(ellipse 60% 40% at 80% 100%,rgba(201,169,110,0.05),transparent),
+    radial-gradient(ellipse 50% 50% at 20% 80%,rgba(232,67,101,0.03),transparent);
+  z-index:0;
+}
+.hero::after{
+  content:'';position:absolute;inset:0;
+  background:url('images/pack-light.gif') center 30%/cover no-repeat;
+  opacity:0.06;filter:saturate(0.3);z-index:0;
+  mask-image:radial-gradient(ellipse at 50% 40%,black 30%,transparent 70%);
+  -webkit-mask-image:radial-gradient(ellipse at 50% 40%,black 30%,transparent 70%);
 }
 .hero>*{position:relative;z-index:1}
 .hero-badge{
-  display:inline-block;padding:6px 18px;border-radius:100px;
-  font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
-  background:rgba(255,45,85,0.15);border:1px solid rgba(255,45,85,0.3);
-  color:var(--accent);margin-bottom:24px;
-  animation:fadeInDown .8s both .2s;
+  display:inline-flex;align-items:center;gap:6px;
+  padding:5px 16px;border-radius:100px;
+  font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  background:var(--accent-dim);border:1px solid rgba(232,67,101,0.25);
+  color:var(--accent);margin-bottom:28px;
+  animation:fadeDown .7s both .2s;
 }
 .hero h1{
-  font-family:var(--font-display);font-size:clamp(48px,10vw,96px);font-weight:700;
-  line-height:1;margin-bottom:16px;
-  background:linear-gradient(135deg,#fff 30%,var(--accent),var(--gold));
+  font-family:var(--font-display);font-size:clamp(44px,9vw,88px);font-weight:700;
+  line-height:1;margin-bottom:18px;
+  background:linear-gradient(135deg,#fff 25%,var(--accent) 55%,var(--gold) 80%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  animation:fadeInUp .8s both .4s;
+  animation:fadeUp .7s both .35s;
 }
 .hero p{
-  font-size:clamp(16px,2.5vw,22px);color:var(--text-dim);max-width:540px;
-  margin-bottom:40px;animation:fadeInUp .8s both .6s;
+  font-size:clamp(15px,2vw,20px);color:var(--text-dim);max-width:520px;
+  margin-bottom:36px;animation:fadeUp .7s both .5s;
 }
 .hero-cta{
-  display:inline-flex;align-items:center;gap:12px;
-  padding:18px 40px;border-radius:100px;font-size:18px;font-weight:700;
-  background:linear-gradient(135deg,var(--accent),#ff1744);
-  color:#fff;border:none;cursor:pointer;transition:all .3s;
-  animation:fadeInUp .8s both .8s;
-  box-shadow:0 4px 30px rgba(255,45,85,0.4);
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 36px;border-radius:100px;font-size:15px;font-weight:700;
+  background:linear-gradient(135deg,var(--accent),#d6335a);
+  color:#fff;border:none;cursor:pointer;transition:all .4s;
+  animation:fadeUp .7s both .65s;
+  box-shadow:0 4px 28px rgba(232,67,101,0.35);
 }
-.hero-cta:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(255,45,85,0.6);color:#fff}
-.hero-cta svg{width:20px;height:20px}
+.hero-cta svg{width:18px;height:18px}
+.hero-cta:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(232,67,101,0.5);color:#fff}
+.hero-scroll{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  animation:fadeUp .7s both .9s;
+}
+.hero-scroll a{
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  color:var(--text-muted);font-size:10px;letter-spacing:2px;text-transform:uppercase;
+  transition:color .3s;
+}
+.hero-scroll a:hover{color:var(--accent)}
+.hero-scroll-line{
+  width:1px;height:32px;background:linear-gradient(to bottom,var(--text-muted),transparent);
+  animation:scrollPulse 2s ease-in-out infinite;
+}
 
-/* Sections */
-.section{padding:80px 24px}
+/* Sections common */
+.section{padding:100px 24px}
 .section-inner{max-width:1100px;margin:0 auto}
-.section-label{
-  font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
-  color:var(--accent);margin-bottom:8px;
+.section-tag{
+  display:inline-block;margin-bottom:10px;
+  font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:var(--accent);
 }
 .section-title{
-  font-family:var(--font-display);font-size:clamp(28px,5vw,44px);margin-bottom:16px;
+  font-family:var(--font-display);font-size:clamp(26px,4.5vw,40px);
+  font-weight:700;line-height:1.2;margin-bottom:12px;
 }
-.section-sub{
-  color:var(--text-dim);font-size:15px;max-width:600px;margin-bottom:40px;
+.section-desc{
+  color:var(--text-dim);font-size:15px;max-width:560px;margin-bottom:44px;line-height:1.7;
 }
 
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-visual{
+  position:relative;border-radius:var(--radius-lg);overflow:hidden;
+  aspect-ratio:3/4;background:var(--bg3);
+}
+.about-visual img{width:100%;height:100%;object-fit:cover}
+.about-visual::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(7,7,13,0.6),transparent 40%);
+}
+
+/* Platform links */
+.platforms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.platform-card{
+  display:flex;align-items:center;gap:16px;
+  padding:18px 22px;
+  background:var(--surface);border:1px solid rgba(255,255,255,0.05);
+  border-radius:var(--radius);transition:all .35s;cursor:pointer;
+}
+.platform-card:hover{
+  background:var(--surface-hover);border-color:rgba(232,67,101,0.2);
+  transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.4);
+}
+.platform-icon{
+  width:44px;height:44px;border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;flex-shrink:0;
+  background:var(--accent-dim);
+}
+.platform-info{flex:1;min-width:0}
+.platform-info strong{display:block;font-size:14px;margin-bottom:2px}
+.platform-info span{font-size:12px;color:var(--text-dim)}
+.platform-arrow{color:var(--text-muted);font-size:16px;transition:transform .3s}
+.platform-card:hover .platform-arrow{transform:translateX(4px);color:var(--accent)}
+
 /* Products */
+.products-bg{
+  background:var(--bg2);
+  border-top:1px solid rgba(255,255,255,0.03);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
 .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
 .product-card{
-  background:var(--card-bg);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);
-  overflow:hidden;transition:all .4s;cursor:pointer;position:relative;
+  background:var(--surface);border:1px solid rgba(255,255,255,0.05);
+  border-radius:var(--radius-lg);overflow:hidden;transition:all .4s;
 }
 .product-card:hover{
-  transform:translateY(-8px);border-color:rgba(255,45,85,0.3);
-  box-shadow:0 20px 60px rgba(255,45,85,0.15);
+  transform:translateY(-6px);border-color:rgba(232,67,101,0.2);
+  box-shadow:0 20px 60px rgba(232,67,101,0.08);
 }
-.product-card-image{
-  height:220px;overflow:hidden;position:relative;
-  background:var(--bg2);
+.product-img{
+  height:240px;overflow:hidden;position:relative;
+  background:var(--bg3);
 }
-.product-card-image img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.product-card:hover .product-card-image img{transform:scale(1.05)}
-.product-card-badge{
-  position:absolute;top:12px;left:12px;
-  padding:4px 12px;border-radius:100px;font-size:11px;font-weight:700;text-transform:uppercase;
-  background:var(--accent);color:#fff;
+.product-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.product-card:hover .product-img img{transform:scale(1.06)}
+.product-badge{
+  position:absolute;top:14px;left:14px;
+  padding:4px 14px;border-radius:100px;
+  font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  background:var(--accent-dim);color:var(--accent);border:1px solid rgba(232,67,101,0.25);
 }
-.product-card-body{padding:20px 24px 24px}
-.product-card-body h3{font-family:var(--font-display);font-size:20px;margin-bottom:4px}
-.product-card-body .desc{color:var(--text-dim);font-size:14px;margin-bottom:12px;line-height:1.5}
-.product-card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.product-body{padding:22px 24px 24px}
+.product-body h3{font-size:18px;margin-bottom:6px}
+.product-body .desc{color:var(--text-dim);font-size:13px;margin-bottom:14px;line-height:1.6}
+.product-footer{display:flex;align-items:center;justify-content:space-between}
 .product-price{
-  font-family:var(--font-display);font-size:24px;font-weight:700;
+  font-family:var(--font-display);font-size:22px;font-weight:700;
   background:linear-gradient(135deg,var(--gold),#fff);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
-.product-cta{
-  padding:10px 20px;border-radius:100px;font-size:13px;font-weight:600;
+.product-btn{
+  padding:10px 22px;border-radius:100px;font-size:12px;font-weight:700;
+  letter-spacing:0.5px;text-transform:uppercase;
   background:var(--accent);color:#fff;border:none;cursor:pointer;transition:all .3s;
 }
-.product-cta:hover{background:#ff1744;transform:scale(1.05)}
+.product-btn:hover{background:#d6335a;transform:scale(1.05)}
 
-/* Group VIP */
+/* VIP section */
 .vip-section{
-  background:linear-gradient(135deg,var(--bg2),#1a0a14,#0a0a20);
-  border-top:1px solid rgba(255,45,85,0.1);border-bottom:1px solid rgba(255,45,85,0.1);
+  background:linear-gradient(135deg,var(--bg2),#0d0a1a,var(--bg));
+  border-top:1px solid rgba(232,67,101,0.08);
+  border-bottom:1px solid rgba(232,67,101,0.08);
 }
-.vip-content{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.vip-image{
-  border-radius:var(--radius);overflow:hidden;position:relative;
-  aspect-ratio:1;background:var(--bg3);
+.vip-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.vip-img{
+  border-radius:var(--radius-lg);overflow:hidden;
+  aspect-ratio:1;background:var(--bg3);position:relative;
 }
-.vip-image img{width:100%;height:100%;object-fit:cover}
-.vip-image::after{
+.vip-img img{width:100%;height:100%;object-fit:cover}
+.vip-img::after{
   content:'';position:absolute;inset:0;
-  background:linear-gradient(0deg,rgba(0,0,0,0.6),transparent 50%);
+  background:linear-gradient(0deg,rgba(7,7,13,0.5),transparent 50%);
 }
-.vip-features{list-style:none;margin:20px 0;display:flex;flex-direction:column;gap:12px}
+.vip-features{list-style:none;margin:22px 0;display:flex;flex-direction:column;gap:10px}
 .vip-features li{
-  display:flex;align-items:center;gap:12px;font-size:14px;color:var(--text-dim);
+  display:flex;align-items:center;gap:12px;
+  font-size:14px;color:var(--text);
 }
 .vip-features li::before{
-  content:'✓';display:flex;align-items:center;justify-content:center;
-  width:22px;height:22px;border-radius:50%;
-  background:rgba(255,45,85,0.2);color:var(--accent);font-size:11px;font-weight:700;
+  content:'';display:flex;align-items:center;justify-content:center;
+  width:20px;height:20px;border-radius:50%;flex-shrink:0;
+  background:var(--gold-dim);color:var(--gold);font-size:10px;font-weight:700;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23c9a96e' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:center;background-size:10px;
 }
 .vip-price{
-  display:inline-block;margin:20px 0;
-  font-family:var(--font-display);font-size:36px;font-weight:700;
-  background:linear-gradient(135deg,var(--gold),#fff);
+  display:inline-block;margin:20px 0 8px;
+  font-family:var(--font-display);font-size:34px;font-weight:700;
+  background:linear-gradient(135deg,var(--gold),#fff 60%);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
 
 /* Gallery */
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-.gallery-grid img,.gallery-grid video{
-  width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;
-  transition:transform .4s;cursor:pointer;
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
 }
-.gallery-grid img:hover,.gallery-grid video:hover{transform:scale(1.03)}
+.gallery-grid > *{
+  aspect-ratio:1;overflow:hidden;border-radius:10px;cursor:pointer;
+  position:relative;background:var(--bg3);
+}
+.gallery-grid img,.gallery-grid video{
+  width:100%;height:100%;object-fit:cover;transition:transform .5s;
+}
+.gallery-grid > *:hover img{transform:scale(1.07)}
+.gallery-grid > *:first-child{grid-column:span 2;grid-row:span 2}
+
+/* Lightbox */
+.lightbox{
+  position:fixed;inset:0;z-index:999;
+  background:rgba(0,0,0,0.92);backdrop-filter:blur(8px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;transition:opacity .4s;cursor:pointer;
+}
+.lightbox.open{opacity:1;pointer-events:auto}
+.lightbox img,.lightbox video{
+  max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain;
+  transform:scale(0.9);transition:transform .4s;
+}
+.lightbox.open img,.lightbox.open video{transform:scale(1)}
+.lightbox-close{
+  position:absolute;top:24px;right:32px;
+  width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,0.08);border:none;color:#fff;
+  font-size:20px;cursor:pointer;transition:background .3s;
+  display:flex;align-items:center;justify-content:center;
+}
+.lightbox-close:hover{background:rgba(255,255,255,0.15)}
 
 /* Testimonials */
-.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
 .testimonial-card{
-  background:var(--card-bg);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);
-  padding:24px;position:relative;
+  background:var(--surface);border:1px solid rgba(255,255,255,0.04);
+  border-radius:var(--radius-lg);padding:24px 26px;
+  transition:all .35s;
 }
-.testimonial-card::before{
-  content:'"';position:absolute;top:12px;right:20px;
-  font-family:var(--font-display);font-size:60px;color:var(--accent);opacity:0.2;line-height:1;
+.testimonial-card:hover{
+  border-color:rgba(232,67,101,0.12);
+  box-shadow:0 8px 30px rgba(0,0,0,0.3);
 }
-.testimonial-card p{color:var(--text-dim);font-size:14px;font-style:italic;margin-bottom:12px}
-.testimonial-author{font-size:13px;font-weight:600;color:var(--gold)}
+.testimonial-stars{color:var(--gold);font-size:13px;margin-bottom:10px;letter-spacing:2px}
+.testimonial-card p{color:var(--text-dim);font-size:14px;font-style:italic;line-height:1.7;margin-bottom:14px}
+.testimonial-author{font-size:12px;font-weight:600;color:var(--text)}
+.testimonial-role{font-size:11px;color:var(--text-muted)}
 
 /* FAQ */
 .faq-list{max-width:700px;margin:0 auto}
 .faq-item{
-  border-bottom:1px solid rgba(255,255,255,0.06);padding:20px 0;cursor:pointer;
+  border-bottom:1px solid rgba(255,255,255,0.05);padding:18px 0;
 }
-.faq-question{
-  display:flex;justify-content:space-between;align-items:center;
-  font-size:16px;font-weight:600;color:var(--text);transition:color .3s;
+.faq-q{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  font-size:15px;font-weight:600;cursor:pointer;transition:color .3s;
+  user-select:none;
 }
-.faq-item:hover .faq-question{color:var(--accent)}
+.faq-q:hover{color:var(--accent)}
 .faq-icon{
   width:24px;height:24px;display:flex;align-items:center;justify-content:center;
-  transition:transform .3s;font-size:18px;
+  flex-shrink:0;font-size:20px;font-weight:300;color:var(--text-muted);
+  transition:transform .3s;
 }
-.faq-item.open .faq-icon{transform:rotate(45deg)}
-.faq-answer{
-  max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .4s ease, padding .4s ease;
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--accent)}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .4s ease,opacity .3s ease;
   opacity:0;padding-top:0;
 }
-.faq-item.open .faq-answer{
-  max-height:300px;opacity:1;padding-top:16px;
+.faq-item.open .faq-a{
+  max-height:300px;opacity:1;padding-top:14px;
 }
-.faq-answer p{color:var(--text-dim);font-size:14px;line-height:1.7}
+.faq-a p{color:var(--text-dim);font-size:14px;line-height:1.7}
 
 /* Final CTA */
 .cta-final{
-  text-align:center;padding:100px 24px;
-  background:radial-gradient(ellipse at 50% 50%,#1a0a14,transparent 70%);
+  text-align:center;padding:120px 24px;
+  background:radial-gradient(ellipse at 50% 50%,rgba(232,67,101,0.06),transparent 70%);
 }
-.cta-final h2{font-family:var(--font-display);font-size:clamp(32px,5vw,56px);margin-bottom:16px}
-.cta-final p{color:var(--text-dim);max-width:500px;margin:0 auto 32px;font-size:16px}
-.cta-final .hero-cta{animation:none}
+.cta-final h2{
+  font-family:var(--font-display);font-size:clamp(28px,4.5vw,48px);margin-bottom:14px;
+}
+.cta-final p{color:var(--text-dim);max-width:480px;margin:0 auto 32px;font-size:15px}
+
+/* Age gate overlay */
+.age-gate{
+  position:fixed;inset:0;z-index:9999;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--bg);flex-direction:column;gap:24px;text-align:center;padding:32px;
+  transition:opacity .6s,visibility .6s;
+}
+.age-gate.hidden{opacity:0;pointer-events:none;visibility:hidden}
+.age-gate-icon{font-size:48px;margin-bottom:4px}
+.age-gate h2{font-family:var(--font-display);font-size:28px;margin-bottom:4px}
+.age-gate p{color:var(--text-dim);max-width:380px;font-size:14px;line-height:1.6}
+.age-gate-btns{display:flex;gap:12px;margin-top:8px}
+.age-gate-btn{
+  padding:14px 36px;border-radius:100px;font-size:14px;font-weight:700;border:none;cursor:pointer;
+  transition:all .3s;
+}
+.age-gate-btn.yes{background:var(--accent);color:#fff}
+.age-gate-btn.yes:hover{background:#d6335a}
+.age-gate-btn.no{background:var(--surface);color:var(--text-dim);border:1px solid rgba(255,255,255,0.08)}
+.age-gate-btn.no:hover{background:var(--surface-hover)}
 
 /* Footer */
 .footer{
-  text-align:center;padding:32px 24px;
-  border-top:1px solid rgba(255,255,255,0.05);color:var(--text-dim);font-size:13px;
+  text-align:center;padding:36px 24px;
+  border-top:1px solid rgba(255,255,255,0.03);
+  color:var(--text-muted);font-size:12px;line-height:1.8;
 }
-.footer a{color:var(--text-dim)}
+.footer a{color:var(--text-muted)}
 .footer a:hover{color:var(--accent)}
-.footer .age-warning{
-  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:100px;
-  border:1px solid rgba(255,45,85,0.2);font-size:11px;color:var(--accent);
+.footer-badge{
+  display:inline-block;margin-top:10px;
+  padding:4px 14px;border-radius:100px;
+  border:1px solid rgba(232,67,101,0.15);
+  font-size:10px;color:var(--accent);letter-spacing:1px;
 }
 
 /* Animations */
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes scrollPulse{0%,100%{opacity:0.4}50%{opacity:1}}
 
-.reveal{opacity:0;transform:translateY(30px);transition:all .8s ease}
+.reveal{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.25,.46,.45,.94)}
 .reveal.visible{opacity:1;transform:translateY(0)}
-.reveal-delay-1{transition-delay:.1s}
-.reveal-delay-2{transition-delay:.2s}
-.reveal-delay-3{transition-delay:.3s}
+.r-delay-1{transition-delay:.1s}
+.r-delay-2{transition-delay:.2s}
+.r-delay-3{transition-delay:.3s}
+.r-delay-4{transition-delay:.4s}
 
+/* Responsive */
 @media(max-width:768px){
-  .vip-content{grid-template-columns:1fr}
-  .vip-image{aspect-ratio:16/9}
-  .products-grid{grid-template-columns:1fr}
-  .testimonials-grid{grid-template-columns:1fr}
-  .gallery-grid{grid-template-columns:repeat(2,1fr)}
   .header{padding:12px 16px}
-  .hero h1{font-size:40px}
+  .header-links a{padding:6px 14px;font-size:10px}
+  .hero{padding:100px 20px 50px}
+  .about-grid{grid-template-columns:1fr}
+  .about-visual{aspect-ratio:16/9;max-height:300px}
+  .vip-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid > *:first-child{grid-column:span 2;grid-row:span 1}
   .section{padding:60px 16px}
+  .cta-final{padding:80px 20px}
+  .age-gate h2{font-size:22px}
 }
 </style>
 </head>
 <body>
 
+<!-- Age Gate -->
+<div class="age-gate" id="ageGate">
+  <div class="age-gate-icon">🔞</div>
+  <h2>Conteudo Adulto</h2>
+  <p>Este site contem material explicito para maiores de 18 anos. Ao continuar, voce confirma ter idade legal para acessar este tipo de conteudo.</p>
+  <div class="age-gate-btns">
+    <button class="age-gate-btn yes" onclick="document.getElementById('ageGate').classList.add('hidden')">Tenho 18+</button>
+    <button class="age-gate-btn no" onclick="window.location.href='https://google.com'">Sair</button>
+  </div>
+</div>
+
 <header class="header">
   <div class="header-logo">Nathy Varelli</div>
-  <div class="header-links">
-    <a href="https://t.me/nathyvarellibot" target="_blank">Falar no Telegram</a>
-  </div>
+  <nav class="header-links">
+    <a href="#packs">Packs</a>
+    <a href="#vip">VIP</a>
+    <a href="#plataformas">Links</a>
+    <a href="https://t.me/nathyvarellibot" target="_blank" style="background:var(--accent);color:#fff;border-color:var(--accent);-webkit-text-fill-color:#fff">Falar no Telegram</a>
+  </nav>
 </header>
 
 <!-- Hero -->
 <section class="hero">
-  <div class="hero-badge">+18 Conteudo Exclusivo</div>
+  <div class="hero-badge">🔞 Conteudo Exclusivo</div>
   <h1>Nathy Varelli</h1>
-  <p>Delicia, safadeza e conteudo quente direto pra voce. Vem pro meu privado e se acaba de prazer 😈🔥</p>
+  <p>Delicia, provocacao e o melhor conteudo +18 direto pra voce. Vem pro meu privado e descobre o que e bom 😈🔥</p>
   <a href="https://t.me/nathyvarellibot" target="_blank" class="hero-cta">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2l-19 7.5 6 2.5L18 7l-6 6 2.5 6L21.5 2z"/></svg>
-    Falar com Nathy Agora
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2l-19 7.5 6 2.5L18 7l-6 6 2.5 6L21.5 2z"/></svg>
+    Chamar Nathy no Telegram
   </a>
+  <div class="hero-scroll">
+    <a href="#sobre">
+      <span>Rolar</span>
+      <div class="hero-scroll-line"></div>
+    </a>
+  </div>
 </section>
 
 <!-- About -->
-<section class="section">
-  <div class="section-inner reveal">
-    <div style="max-width:600px">
-      <div class="section-label">Sobre Mim</div>
-      <h2 class="section-title">Vem Pro Meu Mundo</h2>
-      <p style="color:var(--text-dim);font-size:15px;line-height:1.8">
-        Aqui é Nathy, a gata mais safada do Telegram. Criei esse cantinho pra gente se divertir 
-        sem censura - fotos intimas, videos quentes e um grupo vip onde a putaria rola 24h por dia. 
-        Se voce tem disposicao e quer ver coisa boa, ja sabe... me chama! 💋
-      </p>
+<section class="section" id="sobre">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <img src="images/preview-1.jpg" alt="Nathy Varelli" loading="lazy">
+      </div>
+      <div class="reveal r-delay-1">
+        <div class="section-tag">Sobre Mim</div>
+        <h2 class="section-title">A Gata Mais Safada do Telegram</h2>
+        <p style="color:var(--text-dim);font-size:15px;line-height:1.8;margin-bottom:20px">
+          Aqui e Nathy, 22 anos, carioca, corpo violao e criadora de conteudo +18. 
+          Criei esse cantinho pra gente se divertir sem censura — fotos intimas, 
+          videos caseiros e um grupo vip onde a putaria rola 24h.
+        </p>
+        <p style="color:var(--text-dim);font-size:15px;line-height:1.8">
+          Se voce tem disposicao e quer ver coisa boa, ja sabe onde me encontrar. 
+          Chama no Telegram e para de so olhar 💋
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Platform Links -->
+<section class="section" style="background:var(--bg2);border-top:1px solid rgba(255,255,255,0.03);border-bottom:1px solid rgba(255,255,255,0.03)" id="plataformas">
+  <div class="section-inner">
+    <div style="text-align:center" class="reveal">
+      <div class="section-tag">Onde Me Encontrar</div>
+      <h2 class="section-title">Minhas Plataformas</h2>
+      <p class="section-desc" style="margin-left:auto;margin-right:auto">Me segue em todas as redes que tem conteudo exclusivo te esperando 🔥</p>
+    </div>
+    <div class="platforms-grid reveal r-delay-1">
+      <a href="https://t.me/nathyvarellibot" target="_blank" class="platform-card">
+        <div class="platform-icon" style="background:rgba(0,136,204,0.15)">✈️</div>
+        <div class="platform-info">
+          <strong>Telegram</strong>
+          <span>@nathyvarellibot — Chat direto</span>
+        </div>
+        <span class="platform-arrow">→</span>
+      </a>
+      <a href="https://nathyvarelli.github.io/links" target="_blank" class="platform-card">
+        <div class="platform-icon" style="background:var(--accent-dim)">🔗</div>
+        <div class="platform-info">
+          <strong>Linktree</strong>
+          <span>Todos os links em um so lugar</span>
+        </div>
+        <span class="platform-arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- Products -->
-<section class="section" style="background:var(--bg2)">
+<section class="section products-bg" id="packs">
   <div class="section-inner">
-    <div class="reveal">
-      <div class="section-label">Packs</div>
+    <div class="reveal" style="text-align:center">
+      <div class="section-tag">Packs</div>
       <h2 class="section-title">Conteudo Exclusivo</h2>
-      <p class="section-sub">Fotos e videos intimos que so eu posso te mostrar. Escolhe seu pack e vem ver! 🔞</p>
+      <p class="section-desc" style="margin-left:auto;margin-right:auto">Fotos e videos intimos que so eu posso te mostrar. Escolhe seu pack e vem ver! 🔞</p>
     </div>
     <div class="products-grid">
-      <div class="product-card reveal reveal-delay-1">
-        <div class="product-card-image">
-          <span class="product-card-badge">Mais Vendido</span>
+      <div class="product-card reveal r-delay-1">
+        <div class="product-img">
+          <span class="product-badge">⭐ Mais Vendido</span>
           <img src="images/pack-light.gif" alt="Pack Light" loading="lazy">
         </div>
-        <div class="product-card-body">
+        <div class="product-body">
           <h3>Pack Light</h3>
           <p class="desc">Fotos intimas bem gostosa pra voce! 4 fotos exclusivas que vao te deixar de pau duro 🍆🔥</p>
-          <div class="product-card-footer">
+          <div class="product-footer">
             <span class="product-price">R$ 9,99</span>
-            <a href="https://t.me/nathyvarellibot" target="_blank" class="product-cta">Comprar Agora</a>
+            <a href="https://t.me/nathyvarellibot" target="_blank" class="product-btn">Comprar</a>
           </div>
         </div>
       </div>
-
-      <div class="product-card reveal reveal-delay-2">
-        <div class="product-card-image">
-          <span class="product-card-badge">Completo</span>
+      <div class="product-card reveal r-delay-2">
+        <div class="product-img">
+          <span class="product-badge">🔥 Completo</span>
           <img src="images/preview-1.jpg" alt="Pack Completo" loading="lazy">
         </div>
-        <div class="product-card-body">
+        <div class="product-body">
           <h3>Pack Nathy Completo</h3>
           <p class="desc">Conteudo exclusivo completo - tudo que voce sempre quis ver da Nathy. Pacotao recheado! 🔥💦</p>
-          <div class="product-card-footer">
+          <div class="product-footer">
             <span class="product-price">R$ 29,90</span>
-            <a href="https://t.me/nathyvarellibot" target="_blank" class="product-cta">Comprar Agora</a>
+            <a href="https://t.me/nathyvarellibot" target="_blank" class="product-btn">Comprar</a>
           </div>
         </div>
       </div>
@@ -351,30 +551,30 @@ img{max-width:100%;display:block}
 </section>
 
 <!-- VIP Group -->
-<section class="section vip-section">
+<section class="section vip-section" id="vip">
   <div class="section-inner">
-    <div class="vip-content">
-      <div class="vip-image reveal">
+    <div class="vip-grid">
+      <div class="vip-img reveal">
         <img src="images/group-vip.jpg" alt="Grupo VIP Nathy Varelli" loading="lazy">
       </div>
-      <div class="reveal reveal-delay-1">
-        <div class="section-label">Grupo VIP</div>
-        <h2 class="section-title">NATHY VARELLI - VIP 🩷</h2>
+      <div class="reveal r-delay-1">
+        <div class="section-tag">Grupo VIP</div>
+        <h2 class="section-title">NATHY VARELLI — GRUPOS VIP 🩷</h2>
         <p style="color:var(--text-dim);font-size:15px;line-height:1.7">
-          O grupo mais quente do Telegram! Aqui a putaria nao para - 24 horas de conteudo exclusivo, 
-          interacao com a Nathy, e os membros mais safados do Brasil. 
+          O grupo mais quente do Telegram, e WhatsApp! Putaria 24h, conteudo novo todo santo dia 
+          e interacao com a Nathy. So os membros mais safados do Brasil.
         </p>
         <ul class="vip-features">
           <li>Conteudo novo todo santo dia</li>
           <li>Interacao direta com a Nathy</li>
           <li>Midias exclusivas que nao saem nos packs</li>
-          <li>Membros +18 de todo Brasil</li>
+          <li>Comunidade +18 com membros do Brasil todo</li>
           <li>Putaria 24 horas sem censura</li>
         </ul>
-        <div class="vip-price">R$ 4,99</div>
+        <div class="vip-price">R$ 14,99</div>
         <br>
-        <a href="https://t.me/nathyvarellibot" target="_blank" class="hero-cta" style="display:inline-flex">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2l-19 7.5 6 2.5L18 7l-6 6 2.5 6L21.5 2z"/></svg>
+        <a href="https://t.me/nathyvarellibot" target="_blank" class="hero-cta" style="display:inline-flex;font-size:13px;padding:14px 30px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2l-19 7.5 6 2.5L18 7l-6 6 2.5 6L21.5 2z"/></svg>
           Quero Entrar no Grupo
         </a>
       </div>
@@ -385,12 +585,12 @@ img{max-width:100%;display:block}
 <!-- Gallery -->
 <section class="section">
   <div class="section-inner reveal">
-    <div class="section-label">Previa</div>
+    <div class="section-tag">Previa</div>
     <h2 class="section-title">Veja So o Que Tem</h2>
-    <p class="section-sub">Uma amostrinha do que te espera no privado... isso e so o comeco 😈</p>
+    <p class="section-desc">Uma amostrinha do que te espera no privado... isso e so o comeco 😈</p>
   </div>
   <div class="section-inner" style="max-width:900px">
-    <div class="gallery-grid reveal">
+    <div class="gallery-grid reveal r-delay-1" id="galleryGrid">
       <img src="images/preview-1.jpg" alt="Preview" loading="lazy">
       <img src="images/pack-light.gif" alt="Preview" loading="lazy">
       <img src="images/group-vip.jpg" alt="Preview" loading="lazy">
@@ -399,26 +599,38 @@ img{max-width:100%;display:block}
   </div>
 </section>
 
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
 <!-- Testimonials -->
-<section class="section" style="background:var(--bg2)">
-  <div class="section-inner reveal">
-    <div class="section-label">Depoimentos</div>
+<section class="section" style="background:var(--bg2);border-top:1px solid rgba(255,255,255,0.03);border-bottom:1px solid rgba(255,255,255,0.03)">
+  <div class="section-inner reveal" style="text-align:center">
+    <div class="section-tag">Depoimentos</div>
     <h2 class="section-title">O Que Falam de Mim</h2>
-    <p class="section-sub">Meus membros nao param de elogiar... quer ser o proximo? 😏</p>
+    <p class="section-desc" style="margin-left:auto;margin-right:auto">Meus membros nao param de elogiar... quer ser o proximo? 😏</p>
   </div>
   <div class="section-inner">
     <div class="testimonials-grid">
-      <div class="testimonial-card reveal reveal-delay-1">
+      <div class="testimonial-card reveal r-delay-1">
+        <div class="testimonial-stars">★★★★★</div>
         <p>"Melhor conteudo que ja comprei. Nathy e muito gostosa e o grupo e sem tamanho, putaria todo dia"</p>
-        <div class="testimonial-author">— Lucas S.</div>
+        <div class="testimonial-author">Lucas S.</div>
+        <div class="testimonial-role">Membro VIP ha 3 meses</div>
       </div>
-      <div class="testimonial-card reveal reveal-delay-2">
-        <p>"Pack completo vale cada centavo. Fotos maravilhosas, Nathy e de cair o cu da bund4"</p>
-        <div class="testimonial-author">— Pedro H.</div>
+      <div class="testimonial-card reveal r-delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"Pack completo vale cada centavo. Fotos maravilhosas, Nathy e de cair o cu da bunda"</p>
+        <div class="testimonial-author">Pedro H.</div>
+        <div class="testimonial-role">Comprador do Pack Completo</div>
       </div>
-      <div class="testimonial-card reveal reveal-delay-3">
+      <div class="testimonial-card reveal r-delay-3">
+        <div class="testimonial-stars">★★★★★</div>
         <p>"Grupo VIP e sem igual, todo dia conteudo novo e a Nathy interage com todo mundo. Nota 10!"</p>
-        <div class="testimonial-author">— Gabriel O.</div>
+        <div class="testimonial-author">Gabriel O.</div>
+        <div class="testimonial-role">Membro VIP ha 2 meses</div>
       </div>
     </div>
   </div>
@@ -427,45 +639,45 @@ img{max-width:100%;display:block}
 <!-- FAQ -->
 <section class="section">
   <div class="section-inner">
-    <div class="reveal" style="text-align:center;margin-bottom:40px">
-      <div class="section-label">FAQ</div>
+    <div class="reveal" style="text-align:center;margin-bottom:36px">
+      <div class="section-tag">FAQ</div>
       <h2 class="section-title">Duvidas? Eu Respondo</h2>
     </div>
     <div class="faq-list reveal">
       <div class="faq-item open">
-        <div class="faq-question">
+        <div class="faq-q">
           <span>Como compro os packs?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-answer"><p>So clicar em "Comprar" no pack que voce quiser, ou me chamar no Telegram. O pagamento e via Pix e voce recebe o conteudo na hora! 💨</p></div>
+        <div class="faq-a"><p>So clicar em "Comprar" no pack que quiser, ou me chamar no Telegram. O pagamento e via Pix, processado pelo Mercado Pago — seguro e rapidinho. Voce recebe o conteudo na hora! 💨</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-q">
           <span>Como entro no grupo VIP?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-answer"><p>Me chama no Telegram, paga o acesso de R$ 14,99 via Pix e pronto - voce recebe o link do grupo privado e ja entra na putaria! 🔞</p></div>
+        <div class="faq-a"><p>Me chama no Telegram, paga R$ 14,99 via Pix e pronto — voce recebe o link do grupo privado automaticamente. A putaria te espera! 🔞</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
+        <div class="faq-q">
           <span>O pagamento e seguro?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-answer"><p>Sim! Tudo processado pelo Mercado Pago, o mesmo sistema que o Mercado Livre usa. Seu pagamento e 100% seguro e voce recebe o acesso automaticamente. ✅</p></div>
+        <div class="faq-a"><p>Sim! Tudo processado pelo Mercado Pago, o mesmo sistema do Mercado Livre. Seu pagamento e 100% seguro e a entrega e automatica. ✅</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
-          <span>Vaza conteudo novo todo dia?</span>
+        <div class="faq-q">
+          <span>Sai conteudo novo com frequencia?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-answer"><p>Sim! No grupo VIP posto midia nova todo santo dia. E os packs sao atualizados com fotos e videos novos regularmente. Voce nao vai ficar sem novidade! 🔥</p></div>
+        <div class="faq-a"><p>Sim! No grupo VIP posto midia nova todo santo dia. E os packs sao atualizados com fotos e videos novos. Voce nunca fica sem novidade! 🔥</p></div>
       </div>
       <div class="faq-item">
-        <div class="faq-question">
-          <span>Posso conversar com voce?</span>
+        <div class="faq-q">
+          <span>Posso conversar com voce pessoalmente?</span>
           <span class="faq-icon">+</span>
         </div>
-        <div class="faq-answer"><p>Claro! Me chama no Telegram que eu respondo pessoalmente. Adoro conversar com meus membros, ate os mais safados... 😈💬</p></div>
+        <div class="faq-a"><p>Claro! Me chama no Telegram que eu respondo pessoalmente. Adoro conversar com meus membros — ate os mais safados... 😈💬</p></div>
       </div>
     </div>
   </div>
@@ -475,9 +687,9 @@ img{max-width:100%;display:block}
 <section class="cta-final">
   <div class="reveal">
     <h2>Pronto Pra Ver Tudo?</h2>
-    <p>Nao perde mais tempo - chama Nathy no Telegram agora e vem pro lado mais quente da internet! 🔞🔥</p>
+    <p>Nao perde mais tempo — chama Nathy no Telegram agora e vem pro lado mais quente da internet! 🔞🔥</p>
     <a href="https://t.me/nathyvarellibot" target="_blank" class="hero-cta" style="display:inline-flex">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2l-19 7.5 6 2.5L18 7l-6 6 2.5 6L21.5 2z"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2l-19 7.5 6 2.5L18 7l-6 6 2.5 6L21.5 2z"/></svg>
       Chamar Nathy no Telegram
     </a>
   </div>
@@ -486,33 +698,59 @@ img{max-width:100%;display:block}
 <!-- Footer -->
 <footer class="footer">
   <p>&copy; 2026 Nathy Varelli &mdash; Conteudo +18</p>
-  <p style="font-size:12px;color:#555">Este site contem conteudo adulto. Ao continuar, voce confirma ter 18 anos ou mais.</p>
-  <span class="age-warning">🔞 18+</span>
+  <p style="font-size:11px;color:#443344">Este site contem conteudo adulto destinado a maiores de 18 anos.</p>
+  <a href="https://t.me/nathyvarellibot" target="_blank">@nathyvarellibot</a>
+  <div class="footer-badge">🔞 18+</div>
 </footer>
 
 <script>
 document.addEventListener('DOMContentLoaded', function(){
   // Scroll reveal
-  const revealObserver = new IntersectionObserver(entries => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      if(e.isIntersecting){ e.target.classList.add('visible'); revealObserver.unobserve(e.target) }
+      if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target) }
     })
-  }, {threshold:.1})
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el))
+  }, {threshold:.08, rootMargin:'0px 0px -40px 0px'})
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el))
 
-  // FAQ accordion
+  // FAQ
   document.querySelectorAll('.faq-item').forEach(item => {
-    item.querySelector('.faq-question').addEventListener('click', function(){
-      item.classList.toggle('open')
+    item.querySelector('.faq-q').addEventListener('click', function(){
+      const wasOpen = item.classList.contains('open')
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'))
+      if(!wasOpen) item.classList.add('open')
     })
   })
 
-  // Smooth scroll
+  // Lightbox
+  document.querySelectorAll('#galleryGrid > *').forEach(el => {
+    el.addEventListener('click', function(){
+      const img = this.querySelector('img') || this.querySelector('video')
+      if(!img) return
+      const lb = document.getElementById('lightbox')
+      const lbImg = document.getElementById('lightboxImg')
+      if(img.tagName === 'VIDEO') return
+      lbImg.src = img.src
+      lb.classList.add('open')
+    })
+  })
+  document.getElementById('lightbox').addEventListener('click', function(e){
+    if(e.target === this) closeLightbox()
+  })
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeLightbox()
+  })
+  function closeLightbox(){
+    document.getElementById('lightbox').classList.remove('open')
+  }
+  window.closeLightbox = closeLightbox
+
+  // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', function(e){
       e.preventDefault()
-      const target = document.querySelector(this.getAttribute('href'))
-      if(target) target.scrollIntoView({behavior:'smooth'})
+      const t = document.querySelector(this.getAttribute('href'))
+      if(t) t.scrollIntoView({behavior:'smooth'})
     })
   })
 })
